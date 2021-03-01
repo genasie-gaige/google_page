@@ -1,4 +1,103 @@
 <!DOCTYPE html>
 <html>
-    
+<head>
+    <style>
+        .top_left {
+            position: absolute;
+            top: 10px;
+            left: -20px;
+        }
+        .top_right {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+        .bottom_left{
+            position: absolute;
+            bottom: 0px;
+            left: -20px;
+        }
+        .bottom_right{
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+        }
+        li{
+            display: inline;
+            padding: 15px;
+        }
+        li:hover{
+            text-decoration: underline;
+        }
+        #sign_in{
+            background-color: 	#1E90FF;
+            padding: 5px;
+            color: white;
+            border-radius: 4px;
+        }
+        #google_logo{
+            position: absolute;
+            top: 35%;
+            left: 45%;
+
+        }
+        #search_bar{
+            position: absolute;
+            top:40%;
+            left: 30%;
+            border: 1px; 
+            border-style: solid; 
+            border-color: black;
+            height: 20px;
+            width: 500px;
+            border-radius: 25px;
+        }
+        .search_button{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            padding-left: 15px;
+        }
+    </style>
+    <title>Google Page</title>
+</head>
+
+<body>
+    <header>
+        <ul class="top_left">
+            <li>About</li>
+            <li>Store</li>
+        </ul>
+        <ul class="top_right">
+            <li>Gmail</li>
+            <li>Images</li>
+            <span id="sign_in">Sign in</span>
+        </ul>
+    </header>
+    <div>
+        <main id="google_logo">
+            <img scr="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+            alt="Google Logo" style="size: 50%">
+        </main>
+        <form>
+            <input type="text" id="search_bar">
+            <div class="search_button">
+                <button>Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <ul class="bottom_left">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search Works</li>
+        </ul>
+        <ul class="bottom_right">
+            <li>privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>      
+    </footer>
+</body>   
 </html>
